@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Voting Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitor Voting Machine</h1>
+        <div class="form-group">
+            <label for="student-name">Enter Student Name:</label>
+            <input type="text" id="student-name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="candidate-select">Select Candidate:</label>
+            <select id="candidate-select" class="form-control">
+                <option value="">Select Candidate</option>
+                <option value="Suresh">Suresh</option>
+                <option value="Deepak">Deepak</option>
+                <option value="Abhik">Abhik</option>
+            </select>
+        </div>
+        <button onclick="castVote()" class="btn btn-primary">Vote</button>
+        <table id="voting-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Suresh</th>
+                    <th>Deepak</th>
+                    <th>Abhik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
